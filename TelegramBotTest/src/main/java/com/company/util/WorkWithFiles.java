@@ -18,7 +18,6 @@ import java.util.List;
 
 public class WorkWithFiles {
 
-
     public static File getTodosWithPDF() {
         File file = new File("src/main/resources/todos.pdf");
 

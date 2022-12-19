@@ -25,19 +25,11 @@ public class Controller {
 
     public static void handleQuery(Message message, String data){
         Long chatId = message.getChatId();
-        if(data.equals("pdf")){
-            SendDocument sendDocument = new SendDocument();
-            sendDocument.setCaption("This is pdf format!");
-            sendDocument.setChatId(chatId);
-            sendDocument.setDocument(new InputFile(WorkWithFiles.getTodosWithPDF()));
-            ComponentContainer.MY_BOT.sendMsg(sendDocument);
+        if(data.equals("")){
+
         }
-        else if(data.equals("excel")){
-            SendDocument sendDocument = new SendDocument();
-            sendDocument.setCaption("This is excel format!");
-            sendDocument.setChatId(chatId);
-            sendDocument.setDocument(new InputFile(WorkWithFiles.getTodosWithExcel()));
-            ComponentContainer.MY_BOT.sendMsg(sendDocument);
+        else if(data.equals("")){
+
         }
 
 
